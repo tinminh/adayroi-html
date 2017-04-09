@@ -1,0 +1,4329 @@
+/**
+ * ============================================
+ * ---------- Style: ADR Collections ----------
+ * ============================================
+ */
+/**
+ * =====================
+ * - Include libraries -
+ * ===================== 
+ */
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after,
+.wrapper:before,
+.wrapper:after {
+  content: " ";
+  display: table;
+}
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after,
+.wrapper:after {
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after,
+.wrapper:before,
+.wrapper:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.dl-horizontal dd:after,
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after,
+.wrapper:after {
+  clear: both;
+}
+/* end bootstrap */
+/* 
+ *  Core Owl Carousel CSS File
+ *  v1.3.3
+ */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* mouse grab icon */
+.grabbing {
+  /*cursor:url(grabbing.png) 8 8, move;*/
+}
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+/*
+*   Owl Carousel Owl Demo Theme 
+* v1.3.3
+*/
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons div {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  text-decoration: none;
+}
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+/* If PaginationNumbers is true */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  /*background: url(AjaxLoader.gif) no-repeat center center*/
+}
+/*
+== malihu jquery custom scrollbar plugin ==
+Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
+*/
+/*
+CONTENTS: 
+	1. BASIC STYLE - Plugin's basic/essential CSS properties (normally, should not be edited). 
+	2. VERTICAL SCROLLBAR - Positioning and dimensions of vertical scrollbar. 
+	3. HORIZONTAL SCROLLBAR - Positioning and dimensions of horizontal scrollbar.
+	4. VERTICAL AND HORIZONTAL SCROLLBARS - Positioning and dimensions of 2-axis scrollbars. 
+	5. TRANSITIONS - CSS3 transitions for hover events, auto-expanded and auto-hidden scrollbars. 
+	6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS 
+		6.1 THEMES - Scrollbar colors, opacity, dimensions, backgrounds etc. via ready-to-use themes.
+*/
+/* 
+------------------------------------------------------------------------------------------------------------------------
+1. BASIC STYLE  
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCustomScrollbar {
+  -ms-touch-action: none;
+  touch-action: none;
+  /* MSPointer events - direct all pointer events to js */
+}
+.mCustomScrollbar.mCS_no_scrollbar,
+.mCustomScrollbar.mCS_touch_action {
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+.mCustomScrollBox {
+  /* contains plugin's markup */
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: none;
+  direction: ltr;
+}
+.mCSB_container {
+  /* contains the original content */
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+/* 
+------------------------------------------------------------------------------------------------------------------------
+2. VERTICAL SCROLLBAR 
+y-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_inside > .mCSB_container {
+  margin-right: 30px;
+}
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+}
+/* non-visible scrollbar */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-left: 0;
+}
+/* RTL direction/left-side scrollbar */
+.mCSB_scrollTools {
+  /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+  position: absolute;
+  width: 16px;
+  height: auto;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.mCSB_outside + .mCSB_scrollTools {
+  right: -26px;
+}
+/* scrollbar position: outside */
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools,
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  /* RTL direction/left-side scrollbar */
+  right: auto;
+  left: 0;
+}
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  left: -26px;
+}
+/* RTL direction/left-side scrollbar (scrollbar position: outside) */
+.mCSB_scrollTools .mCSB_draggerContainer {
+  /* contains the draggable element and dragger rail markup */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+.mCSB_scrollTools a + .mCSB_draggerContainer {
+  margin: 20px 0;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+.mCSB_scrollTools .mCSB_dragger {
+  /* the draggable element */
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  /* minimum dragger height */
+  z-index: 1;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  /* the dragger element */
+  position: relative;
+  width: 4px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  width: 12px;
+  /* auto-expanded scrollbar */
+}
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 8px;
+  /* auto-expanded scrollbar */
+}
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+  bottom: 0;
+}
+/* 
+------------------------------------------------------------------------------------------------------------------------
+3. HORIZONTAL SCROLLBAR 
+x-axis
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_horizontal.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+.mCSB_horizontal.mCSB_outside > .mCSB_container {
+  min-height: 100%;
+}
+.mCSB_horizontal > .mCSB_container.mCS_no_scrollbar_x.mCS_x_hidden {
+  margin-bottom: 0;
+}
+/* non-visible scrollbar */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  width: auto;
+  height: 16px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.mCustomScrollBox + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  bottom: -26px;
+}
+/* scrollbar position: outside */
+.mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer {
+  margin: 0 20px;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 2px;
+  margin: 7px 0;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 30px;
+  /* minimum dragger width */
+  height: 100%;
+  left: 0;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 4px;
+  margin: 6px auto;
+}
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  height: 12px;
+  /* auto-expanded scrollbar */
+  margin: 2px auto;
+}
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  height: 8px;
+  /* auto-expanded scrollbar */
+  margin: 4px 0;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft,
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft {
+  left: 0;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
+  right: 0;
+}
+/* 
+------------------------------------------------------------------------------------------------------------------------
+4. VERTICAL AND HORIZONTAL SCROLLBARS 
+yx-axis 
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_container_wrapper {
+  position: absolute;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.mCSB_container_wrapper > .mCSB_container {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 20px;
+}
+.mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 20px;
+}
+/* non-visible horizontal scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden + .mCSB_scrollTools.mCSB_scrollTools_vertical {
+  bottom: 0;
+}
+/* non-visible vertical scrollbar/RTL direction/left-side scrollbar */
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  right: 0;
+}
+/* RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 20px;
+}
+/* non-visible scrollbar/RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden + .mCSB_scrollTools ~ .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  left: 0;
+}
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container_wrapper {
+  /* RTL direction/left-side scrollbar */
+  margin-right: 0;
+  margin-left: 30px;
+}
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden > .mCSB_container {
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden > .mCSB_container {
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0;
+  /* non-visible scrollbar */
+  margin-left: 0;
+}
+/* non-visible horizontal scrollbar */
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside > .mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden {
+  margin-bottom: 0;
+}
+/* 
+------------------------------------------------------------------------------------------------------------------------
+5. TRANSITIONS  
+------------------------------------------------------------------------------------------------------------------------
+*/
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  -webkit-transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
+.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
+  -webkit-transition: width 0.2s ease-out 0.2s, height 0.2s ease-out 0.2s, margin-left 0.2s ease-out 0.2s, margin-right 0.2s ease-out 0.2s, margin-top 0.2s ease-out 0.2s, margin-bottom 0.2s ease-out 0.2s, opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: width 0.2s ease-out 0.2s, height 0.2s ease-out 0.2s, margin-left 0.2s ease-out 0.2s, margin-right 0.2s ease-out 0.2s, margin-top 0.2s ease-out 0.2s, margin-bottom 0.2s ease-out 0.2s, opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-out 0.2s, height 0.2s ease-out 0.2s, margin-left 0.2s ease-out 0.2s, margin-right 0.2s ease-out 0.2s, margin-top 0.2s ease-out 0.2s, margin-bottom 0.2s ease-out 0.2s, opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: width 0.2s ease-out 0.2s, height 0.2s ease-out 0.2s, margin-left 0.2s ease-out 0.2s, margin-right 0.2s ease-out 0.2s, margin-top 0.2s ease-out 0.2s, margin-bottom 0.2s ease-out 0.2s, opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+/* 
+------------------------------------------------------------------------------------------------------------------------
+6. SCROLLBAR COLORS, OPACITY AND BACKGROUNDS  
+------------------------------------------------------------------------------------------------------------------------
+*/
+/* 
+	----------------------------------------
+	6.1 THEMES 
+	----------------------------------------
+	*/
+/* default theme ("light") */
+.mCSB_scrollTools {
+  opacity: 0.75;
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+}
+.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 0;
+  filter: "alpha(opacity=0)";
+  -ms-filter: "alpha(opacity=0)";
+}
+.mCustomScrollbar > .mCustomScrollBox > .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar > .mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollBox:hover > .mCSB_scrollTools,
+.mCustomScrollBox:hover ~ .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox ~ .mCSB_scrollTools {
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)";
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+  filter: "alpha(opacity=85)";
+  -ms-filter: "alpha(opacity=85)";
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)";
+}
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-image: url(mCSB_buttons.html);
+  /* css sprites */
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)";
+}
+.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: 0 0;
+  /* 
+		sprites locations 
+		light: 0 0, -16px 0, -32px 0, -48px 0, 0 -72px, -16px -72px, -32px -72px
+		dark: -80px 0, -96px 0, -112px 0, -128px 0, -80px -72px, -96px -72px, -112px -72px
+		*/
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: 0 -20px;
+  /* 
+		sprites locations
+		light: 0 -20px, -16px -20px, -32px -20px, -48px -20px, 0 -92px, -16px -92px, -32px -92px
+		dark: -80px -20px, -96px -20px, -112px -20px, -128px -20px, -80px -92px, -96px -92px, -112 -92px
+		*/
+}
+.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: 0 -40px;
+  /* 
+		sprites locations 
+		light: 0 -40px, -20px -40px, -40px -40px, -60px -40px, 0 -112px, -20px -112px, -40px -112px
+		dark: -80px -40px, -100px -40px, -120px -40px, -140px -40px, -80px -112px, -100px -112px, -120px -112px
+		*/
+}
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: 0 -56px;
+  /* 
+		sprites locations 
+		light: 0 -56px, -20px -56px, -40px -56px, -60px -56px, 0 -128px, -20px -128px, -40px -128px
+		dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100px -128px, -120px -128px
+		*/
+}
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.mCSB_scrollTools .mCSB_buttonLeft:hover,
+.mCSB_scrollTools .mCSB_buttonRight:hover {
+  opacity: 0.75;
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+}
+.mCSB_scrollTools .mCSB_buttonUp:active,
+.mCSB_scrollTools .mCSB_buttonDown:active,
+.mCSB_scrollTools .mCSB_buttonLeft:active,
+.mCSB_scrollTools .mCSB_buttonRight:active {
+  opacity: 0.9;
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)";
+}
+/* theme: "dark" */
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -80px 0;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -80px -20px;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -80px -40px;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -80px -56px;
+}
+/* ---------------------------------------- */
+/* theme: "light-2", "dark-2" */
+.mCS-light-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
+  width: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+.mCS-light-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-light-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 4px;
+  margin: 6px auto;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-light-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px 0;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -20px;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -40px;
+}
+.mCS-light-2.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -56px;
+}
+/* theme: "dark-2" */
+.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px 0;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -20px;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -40px;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -56px;
+}
+/* ---------------------------------------- */
+/* theme: "light-thick", "dark-thick" */
+.mCS-light-thick.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail {
+  width: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 4px;
+  margin: 6px 0;
+}
+.mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 6px;
+  margin: 5px auto;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-light-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -16px 0;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -16px -20px;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -20px -40px;
+}
+.mCS-light-thick.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -20px -56px;
+}
+/* theme: "dark-thick" */
+.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -96px 0;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -96px -20px;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -100px -40px;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -100px -56px;
+}
+/* ---------------------------------------- */
+/* theme: "light-thin", "dark-thin" */
+.mCS-light-thin.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.mCS-light-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 2px;
+}
+.mCS-light-thin.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-thin.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+}
+.mCS-light-thin.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-thin.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 2px;
+  margin: 7px auto;
+}
+/* theme "dark-thin" */
+.mCS-dark-thin.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -80px 0;
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -80px -20px;
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -80px -40px;
+}
+.mCS-dark-thin.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -80px -56px;
+}
+/* ---------------------------------------- */
+/* theme "rounded", "rounded-dark", "rounded-dots", "rounded-dots-dark" */
+.mCS-rounded.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger {
+  height: 14px;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 14px;
+  margin: 0 1px;
+}
+.mCS-rounded.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 14px;
+}
+.mCS-rounded.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  height: 14px;
+  margin: 1px 0;
+}
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  width: 16px;
+  /* auto-expanded scrollbar */
+  height: 16px;
+  margin: -1px 0;
+}
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 4px;
+  /* auto-expanded scrollbar */
+}
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar {
+  height: 16px;
+  /* auto-expanded scrollbar */
+  width: 16px;
+  margin: 0 -1px;
+}
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-rounded-dark.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  height: 4px;
+  /* auto-expanded scrollbar */
+  margin: 6px 0;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: 0 -72px;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: 0 -92px;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: 0 -112px;
+}
+.mCS-rounded.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: 0 -128px;
+}
+/* theme "rounded-dark", "rounded-dots-dark" */
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -80px -72px;
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -80px -92px;
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -80px -112px;
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -80px -128px;
+}
+/* theme "rounded-dots", "rounded-dots-dark" */
+.mCS-rounded-dots.mCSB_scrollTools_vertical .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools_vertical .mCSB_draggerRail {
+  width: 4px;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  background-color: transparent;
+  background-position: center;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAANElEQVQYV2NkIAAYiVbw//9/Y6DiM1ANJoyMjGdBbLgJQAX/kU0DKgDLkaQAvxW4HEvQFwCRcxIJK1XznAAAAABJRU5ErkJggg==");
+  background-repeat: repeat-y;
+  opacity: 0.3;
+  filter: "alpha(opacity=30)";
+  -ms-filter: "alpha(opacity=30)";
+}
+.mCS-rounded-dots.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-rounded-dots-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  height: 4px;
+  margin: 6px 0;
+  background-repeat: repeat-x;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -16px -72px;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -16px -92px;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -20px -112px;
+}
+.mCS-rounded-dots.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -20px -128px;
+}
+/* theme "rounded-dots-dark" */
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALElEQVQYV2NkIAAYSVFgDFR8BqrBBEifBbGRTfiPZhpYjiQFBK3A6l6CvgAAE9kGCd1mvgEAAAAASUVORK5CYII=");
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -96px -72px;
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -96px -92px;
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -100px -112px;
+}
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -100px -128px;
+}
+/* ---------------------------------------- */
+/* theme "3d", "3d-dark", "3d-thick", "3d-thick-dark" */
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-repeat: repeat-y;
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+/* theme "3d", "3d-dark" */
+.mCS-3d.mCSB_scrollTools_vertical .mCSB_dragger,
+.mCS-3d-dark.mCSB_scrollTools_vertical .mCSB_dragger {
+  height: 70px;
+}
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 70px;
+}
+.mCS-3d.mCSB_scrollTools,
+.mCS-3d-dark.mCSB_scrollTools {
+  opacity: 1;
+  filter: "alpha(opacity=30)";
+  -ms-filter: "alpha(opacity=30)";
+}
+.mCS-3d.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail {
+  width: 8px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.5), inset -1px 0 1px rgba(255, 255, 255, 0.2);
+}
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #555;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 8px;
+}
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 8px;
+  margin: 4px 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+}
+.mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 8px;
+  margin: 4px auto;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px -72px;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -92px;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -112px;
+}
+.mCS-3d.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -128px;
+}
+/* theme "3d-dark" */
+.mCS-3d-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.1);
+}
+.mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px -72px;
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -92px;
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -112px;
+}
+.mCS-3d-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -128px;
+}
+/* ---------------------------------------- */
+/* theme: "3d-thick", "3d-thick-dark" */
+.mCS-3d-thick.mCSB_scrollTools,
+.mCS-3d-thick-dark.mCSB_scrollTools {
+  opacity: 1;
+  filter: "alpha(opacity=30)";
+  -ms-filter: "alpha(opacity=30)";
+}
+.mCS-3d-thick.mCSB_scrollTools,
+.mCS-3d-thick-dark.mCSB_scrollTools,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerContainer,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerContainer {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.mCSB_inside + .mCS-3d-thick.mCSB_scrollTools_vertical,
+.mCSB_inside + .mCS-3d-thick-dark.mCSB_scrollTools_vertical {
+  right: 1px;
+}
+.mCS-3d-thick.mCSB_scrollTools_vertical,
+.mCS-3d-thick-dark.mCSB_scrollTools_vertical {
+  box-shadow: inset 1px 0 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.5);
+}
+.mCS-3d-thick.mCSB_scrollTools_horizontal,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal {
+  bottom: 1px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.5);
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4);
+  width: 12px;
+  margin: 2px;
+  position: absolute;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-thick.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #555;
+}
+.mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  height: 12px;
+  width: auto;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerContainer {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 1px 1px 16px rgba(0, 0, 0, 0.1);
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px -72px;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -92px;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -112px;
+}
+.mCS-3d-thick.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -128px;
+}
+/* theme: "3d-thick-dark" */
+.mCS-3d-thick-dark.mCSB_scrollTools {
+  box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.2);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 14px rgba(0, 0, 0, 0.2);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4), inset -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #777;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerContainer {
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 1px 1px 16px rgba(0, 0, 0, 0.1);
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px -72px;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -92px;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -112px;
+}
+.mCS-3d-thick-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -128px;
+}
+/* ---------------------------------------- */
+/* theme: "minimal", "minimal-dark" */
+.mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical,
+.mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+  right: 0;
+  margin: 12px 0;
+}
+.mCustomScrollBox.mCS-minimal + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox.mCS-minimal + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox.mCS-minimal-dark + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+.mCustomScrollBox.mCS-minimal-dark + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  bottom: 0;
+  margin: 0 12px;
+}
+/* RTL direction/left-side scrollbar */
+.mCS-dir-rtl > .mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical,
+.mCS-dir-rtl > .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+  left: 0;
+  right: auto;
+}
+.mCS-minimal.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+.mCS-minimal.mCSB_scrollTools_vertical .mCSB_dragger,
+.mCS-minimal-dark.mCSB_scrollTools_vertical .mCSB_dragger {
+  height: 50px;
+}
+.mCS-minimal.mCSB_scrollTools_horizontal .mCSB_dragger,
+.mCS-minimal-dark.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 50px;
+}
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: "alpha(opacity=20)";
+  -ms-filter: "alpha(opacity=20)";
+}
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-minimal.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: "alpha(opacity=50)";
+  -ms-filter: "alpha(opacity=50)";
+}
+/* theme: "minimal-dark" */
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: "alpha(opacity=20)";
+  -ms-filter: "alpha(opacity=20)";
+}
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: "alpha(opacity=50)";
+  -ms-filter: "alpha(opacity=50)";
+}
+/* ---------------------------------------- */
+/* theme "light-3", "dark-3" */
+.mCS-light-3.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  width: 6px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+}
+.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-light-3.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 6px;
+  margin: 5px 0;
+}
+.mCS-light-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-light-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  width: 12px;
+}
+.mCS-light-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-light-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail {
+  height: 12px;
+  margin: 2px 0;
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px -72px;
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -92px;
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -112px;
+}
+.mCS-light-3.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -128px;
+}
+/* theme "dark-3" */
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px -72px;
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -92px;
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -112px;
+}
+.mCS-dark-3.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -128px;
+}
+/* ---------------------------------------- */
+/* theme "inset", "inset-dark", "inset-2", "inset-2-dark", "inset-3", "inset-3-dark" */
+.mCS-inset.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+  width: 12px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.mCS-inset.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  margin: 3px 5px;
+  position: absolute;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.mCS-inset.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  height: 6px;
+  margin: 5px 3px;
+  position: absolute;
+  width: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.mCS-inset.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-2.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-3.mCSB_scrollTools_horizontal .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  width: 100%;
+  height: 12px;
+  margin: 2px 0;
+}
+.mCS-inset.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px -72px;
+}
+.mCS-inset.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -92px;
+}
+.mCS-inset.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -112px;
+}
+.mCS-inset.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-2.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-3.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -128px;
+}
+/* theme "inset-dark", "inset-2-dark", "inset-3-dark" */
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonUp,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px -72px;
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonDown,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -92px;
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonLeft,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -112px;
+}
+.mCS-inset-dark.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_buttonRight,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -128px;
+}
+/* theme "inset-2", "inset-2-dark" */
+.mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail {
+  border-color: #000;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+/* theme "inset-3", "inset-3-dark" */
+.mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* ---------------------------------------- */
+/* HORIZONTAL */
+/* increase bottom margin to fit the pips */
+.ui-slider-horizontal.ui-slider-pips {
+  margin-bottom: 1.4em;
+}
+/* default hide the labels and pips that arnt visible */
+/* we just use css to hide incase we want to show certain */
+/* labels/pips individually later */
+.ui-slider-pips .ui-slider-label,
+.ui-slider-pips .ui-slider-pip-hide {
+  display: none;
+}
+/* now we show any labels that we've set to show in the options */
+.ui-slider-pips .ui-slider-pip-label .ui-slider-label {
+  display: block;
+}
+/* PIP/LABEL WRAPPER */
+/* position each pip absolutely just below the default slider */
+/* and also prevent accidental selection */
+.ui-slider-pips .ui-slider-pip {
+  width: 2em;
+  height: 1em;
+  line-height: 1em;
+  position: absolute;
+  font-size: 0.8em;
+  color: #999;
+  overflow: visible;
+  text-align: center;
+  top: 20px;
+  left: 20px;
+  margin-left: -1em;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ui-state-disabled.ui-slider-pips .ui-slider-pip {
+  cursor: default;
+}
+/* little pip/line position & size */
+.ui-slider-pips .ui-slider-line {
+  background: #999;
+  width: 1px;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+}
+/* the text label postion & size */
+/* it overflows so no need for width to be accurate */
+.ui-slider-pips .ui-slider-label {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -1em;
+  width: 2em;
+}
+/* make it easy to see when we hover a label */
+.ui-slider-pips:not(.ui-slider-disabled) .ui-slider-pip:hover .ui-slider-label {
+  color: black;
+  font-weight: bold;
+}
+/* VERTICAL */
+/* vertical slider needs right-margin, not bottom */
+.ui-slider-vertical.ui-slider-pips {
+  margin-bottom: 1em;
+  margin-right: 2em;
+}
+/* align vertical pips left and to right of the slider */
+.ui-slider-vertical.ui-slider-pips .ui-slider-pip {
+  text-align: left;
+  top: auto;
+  left: 20px;
+  margin-left: 0;
+  margin-bottom: -0.5em;
+}
+/* vertical line/pip should be horizontal instead */
+.ui-slider-vertical.ui-slider-pips .ui-slider-line {
+  width: 3px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.ui-slider-vertical.ui-slider-pips .ui-slider-label {
+  top: 50%;
+  left: 0.5em;
+  margin-left: 0;
+  margin-top: -0.5em;
+  width: 2em;
+}
+/* FLOATING HORIZTONAL TOOLTIPS */
+/* remove the godawful looking focus outline on handle and float */
+.ui-slider-float .ui-slider-handle:focus,
+.ui-slider-float .ui-slider-handle.ui-state-focus .ui-slider-tip-label,
+.ui-slider-float .ui-slider-handle:focus .ui-slider-tip,
+.ui-slider-float .ui-slider-handle.ui-state-focus .ui-slider-tip-label,
+.ui-slider-float .ui-slider-handle:focus .ui-slider-tip-label .ui-slider-float .ui-slider-handle.ui-state-focus .ui-slider-tip-label {
+  outline: none;
+}
+/* style tooltips on handles and on labels */
+/* also has a nice transition */
+.ui-slider-float .ui-slider-tip,
+.ui-slider-float .ui-slider-tip-label {
+  position: absolute;
+  visibility: hidden;
+  top: -40px;
+  display: block;
+  width: 34px;
+  margin-left: -18px;
+  left: 50%;
+  height: 20px;
+  line-height: 20px;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #888;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0;
+  color: #333;
+  -webkit-transition-property: opacity, top, visibility;
+  -moz-transition-property: opacity, top, visibility;
+  -ms-transition-property: opacity, top, visibility;
+  transition-property: opacity, top, visibility;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -ms-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: 200ms, 200ms, 0ms;
+  -moz-transition-duration: 200ms, 200ms, 0ms;
+  -ms-transition-duration: 200ms, 200ms, 0ms;
+  transition-duration: 200ms, 200ms, 0ms;
+  -webkit-transition-delay: 0ms, 0ms, 200ms;
+  -moz-transition-delay: 0ms, 0ms, 200ms;
+  -ms-transition-delay: 0ms, 0ms, 200ms;
+  transition-delay: 0ms, 0ms, 200ms;
+}
+/* show the tooltip on hover or focus */
+/* also switch transition delay around */
+.ui-slider-float .ui-slider-handle:hover .ui-slider-tip,
+.ui-slider-float .ui-slider-handle.ui-state-hover .ui-slider-tip,
+.ui-slider-float .ui-slider-handle:focus .ui-slider-tip,
+.ui-slider-float .ui-slider-handle.ui-state-focus .ui-slider-tip,
+.ui-slider-float .ui-slider-handle.ui-state-active .ui-slider-tip,
+.ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
+  opacity: 1;
+  top: -30px;
+  visibility: visible;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 200ms, 200ms, 0ms;
+  -moz-transition-delay: 200ms, 200ms, 0ms;
+  -ms-transition-delay: 200ms, 200ms, 0ms;
+  transition-delay: 200ms, 200ms, 0ms;
+}
+/* put label tooltips below slider */
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label {
+  top: 42px;
+}
+.ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
+  top: 32px;
+  font-weight: normal;
+}
+/* give the tooltip a css triangle arrow */
+.ui-slider-float .ui-slider-tip:after,
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+}
+/* put a 1px border on the tooltip arrow to match tooltip border */
+.ui-slider-float .ui-slider-tip:before,
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-top-color: #888;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -5px;
+}
+/* switch the arrow to top on labels */
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  top: -10px;
+}
+.ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-bottom-color: #888;
+  top: -11px;
+}
+/* FLOATING VERTICAL TOOLTIPS */
+/* tooltip floats to left of handle */
+.ui-slider-vertical.ui-slider-float .ui-slider-tip,
+.ui-slider-vertical.ui-slider-float .ui-slider-tip-label {
+  top: 50%;
+  margin-top: -11px;
+  width: 34px;
+  margin-left: 0px;
+  left: -60px;
+  color: #333;
+  -webkit-transition-duration: 200ms, 200ms, 0;
+  -moz-transition-duration: 200ms, 200ms, 0;
+  -ms-transition-duration: 200ms, 200ms, 0;
+  transition-duration: 200ms, 200ms, 0;
+  -webkit-transition-property: opacity, left, visibility;
+  -moz-transition-property: opacity, left, visibility;
+  -ms-transition-property: opacity, left, visibility;
+  transition-property: opacity, left, visibility;
+  -webkit-transition-delay: 0, 0, 200ms;
+  -moz-transition-delay: 0, 0, 200ms;
+  -ms-transition-delay: 0, 0, 200ms;
+  transition-delay: 0, 0, 200ms;
+}
+.ui-slider-vertical.ui-slider-float .ui-slider-handle:hover .ui-slider-tip,
+.ui-slider-vertical.ui-slider-float .ui-slider-handle.ui-state-hover .ui-slider-tip,
+.ui-slider-vertical.ui-slider-float .ui-slider-handle:focus .ui-slider-tip,
+.ui-slider-vertical.ui-slider-float .ui-slider-handle.ui-state-focus .ui-slider-tip,
+.ui-slider-vertical.ui-slider-float .ui-slider-handle.ui-state-active .ui-slider-tip,
+.ui-slider-vertical.ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
+  top: 50%;
+  margin-top: -11px;
+  left: -50px;
+}
+/* put label tooltips to right of slider */
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label {
+  left: 47px;
+}
+.ui-slider-vertical.ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
+  left: 37px;
+}
+/* give the tooltip a css triangle arrow */
+.ui-slider-vertical.ui-slider-float .ui-slider-tip:after,
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-left-color: #ffffff;
+  border-top-color: transparent;
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: -5px;
+  right: -10px;
+  margin-left: 0;
+  top: auto;
+  left: auto;
+}
+.ui-slider-vertical.ui-slider-float .ui-slider-tip:before,
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-left-color: #888;
+  border-top-color: transparent;
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: -5px;
+  right: -11px;
+  margin-left: 0;
+  top: auto;
+  left: auto;
+}
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-right-color: #ffffff;
+  right: auto;
+  left: -10px;
+}
+.ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-right-color: #888;
+  right: auto;
+  left: -11px;
+}
+/* SELECTED STATES */
+/* Comment out this chuck of code if you don't want to have
+        the new label colours shown */
+.ui-slider-pips [class*=ui-slider-pip-initial] {
+  font-weight: bold;
+  color: #14CA82;
+}
+.ui-slider-pips .ui-slider-pip-initial-2 {
+  color: #1897C9;
+}
+.ui-slider-pips [class*=ui-slider-pip-selected] {
+  font-weight: bold;
+  color: #FF7A00;
+}
+.ui-slider-pips .ui-slider-pip-inrange {
+  color: black;
+}
+.ui-slider-pips .ui-slider-pip-selected-2 {
+  color: #E70081;
+}
+.ui-slider-pips [class*=ui-slider-pip-selected] .ui-slider-line,
+.ui-slider-pips .ui-slider-pip-inrange .ui-slider-line {
+  background: black;
+}
+/**
+ * - Overrides -
+ * -------------
+ */
+/**
+ * =======================
+ * - Override: Bootstrap -
+ * =======================
+ */
+.container {
+  width: 1240px;
+  *width: 1240px !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+.thumbnail {
+  display: block;
+  padding: 0px;
+  margin-bottom: 0px;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  transition: none;
+}
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -moz-transition: -moz-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+  }
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0;
+  }
+  .carousel-inner > .item.next.left,
+  .carousel-inner > .item.prev.right,
+  .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  outline: 0;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-family: serif;
+}
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+}
+.carousel-indicators .active {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+}
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -15px;
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    margin-right: -15px;
+  }
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}
+.mCSB_inside > .mCSB_container {
+  margin-right: 0!important;
+}
+/**
+ * ============
+ * - Settings -
+ * ============ 
+ */
+/**
+ * ===================
+ * - Setting: Colors -
+ * =================== 
+ */
+.text-white {
+  color: #ffffff;
+}
+.text-viking {
+  color: #65c8db;
+}
+.text-alizarin-crimson {
+  color: #e31d2c;
+}
+.text-mine-shaft {
+  color: #333333;
+}
+.text-gallery {
+  color: #ededed;
+}
+.text-dove-gray {
+  color: #666666;
+}
+.text-dusty-gray {
+  color: #999999;
+}
+.text-wild-sand {
+  color: #f4f4f4;
+}
+.text-athens-gray {
+  color: #f3f4f7;
+}
+.text-alto {
+  color: #dbdbdb;
+}
+.text-silver {
+  color: #c6c6c6;
+}
+.text-polar {
+  color: #f7fcfd;
+}
+.text-cardinal {
+  color: #ce2525;
+}
+.text-matisse {
+  color: #1a5c9d;
+}
+.text-lochmara {
+  color: #0886d2;
+}
+.text-monza {
+  color: #d60c0c;
+}
+.text-tufts-blue {
+  color: #337ab7;
+}
+.text-tundora {
+  color: #414141;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-viking {
+  background-color: #65c8db;
+}
+.bg-alizarin-crimson {
+  background-color: #e31d2c;
+}
+.bg-mine-shaft {
+  background-color: #333333;
+}
+.bg-gallery {
+  background-color: #ededed;
+}
+.bg-dove-gray {
+  background-color: #666666;
+}
+.bg-dusty-gray {
+  background-color: #999999;
+}
+.bg-wild-sand {
+  background-color: #f4f4f4;
+}
+.bg-athens-gray {
+  background-color: #f3f4f7;
+}
+.bg-alto {
+  background-color: #dbdbdb;
+}
+.bg-silver {
+  background-color: #c6c6c6;
+}
+.bg-polar {
+  background-color: #f7fcfd;
+}
+.bg-cardinal {
+  background-color: #ce2525;
+}
+.bg-matisse {
+  background-color: #1a5c9d;
+}
+.bg-wild-sand {
+  background-color: #f4f4f4;
+}
+.bg-lochmara {
+  background-color: #0886d2;
+}
+.bg-monza {
+  background-color: #d60c0c;
+}
+.bg-black-haze {
+  background-color: #f7f7f7;
+}
+.bg-tufts-blue {
+  background-color: #337ab7;
+}
+.bg-tundora {
+  background-color: #414141;
+}
+/**
+ * ==================
+ * - Setting: Fonts -
+ * ================== 
+ */
+.text-bold {
+  font-family: "Roboto-Bold", sans-serif !important;
+  font-weight: normal;
+}
+.text-medium {
+  font-family: "Roboto-Medium", sans-serif !important;
+  font-weight: normal;
+}
+.text-light {
+  font-family: "Roboto-Light", sans-serif !important;
+  font-weight: normal;
+}
+.text-normal {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+}
+.transition {
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.box-shadow {
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+/*Bootstrap's list style*/
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  *zoom: 1;
+  *float: left;
+}
+/*
+* Animate 
+*/
+.animated {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.delay {
+  animation-delay: 1s;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+/**
+ * ==============
+ * - Components -
+ * ============== 
+ */
+/**
+ * ====================
+ * - Components: Icon -
+ * ====================
+ */
+.top-icon {
+  display: inline-block;
+  background: url('../assets/images/modules/icon.html');
+  margin-right: 5px;
+}
+.top-icon.icon-card {
+  width: 16px;
+  height: 11px;
+  background-position: -59px -69px;
+  float: left;
+  margin-top: 3px;
+}
+.top-icon.icon-phone {
+  width: 15px;
+  height: 11px;
+  background-position: -59px -80px;
+  float: left;
+  margin-top: 3px;
+}
+.top-icon.icon-check {
+  width: 11px;
+  height: 13px;
+  background-position: -59px -105px;
+  float: left;
+  margin-top: 1px;
+}
+.top-icon.icon-register {
+  width: 10px;
+  height: 12px;
+  background-position: -59px -118px;
+  float: left;
+  margin-top: 2px;
+}
+.top-icon.icon-login {
+  width: 13px;
+  height: 11px;
+  background-position: -59px -130px;
+  float: left;
+  margin-top: 3px;
+}
+.icon-cart-white {
+  display: inline-block;
+  width: 23px;
+  height: 20px;
+  background: url('../assets/images/modules/icon.html') -54px 0;
+}
+/**
+ * =====================
+ * - Component: Button -
+ * =====================
+ */
+.adr-collections.button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.adr-collections.button:focus,
+.adr-collections.button:active:focus,
+.adr-collections.button.active:focus,
+.adr-collections.button.focus,
+.adr-collections.button:active.focus,
+.adr-collections.button.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.adr-collections.button:hover,
+.adr-collections.button:focus,
+.adr-collections.button.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.adr-collections.button:active,
+.adr-collections.button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.adr-collections.button.disabled,
+.adr-collections.button[disabled],
+fieldset[disabled] .adr-collections.button {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.adr-collections.button.disabled,
+fieldset[disabled] a.adr-collections.button {
+  pointer-events: none;
+}
+.recipes-btn {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  padding: 5px 10px;
+  padding-bottom: 3px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background: #f8f8f8;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  color: #333;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.recipes-btn i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../assets/images/recipes/icon.html');
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.recipes-btn:hover {
+  color: #000;
+  border-color: #d6d6d6;
+}
+/**
+ * ===========
+ * - Modules -
+ * =========== 
+ */
+/**
+ * ===========
+ * - Layouts -
+ * =========== 
+ */
+/**
+ * ================
+ * - Layout: Base -
+ * ================
+ */
+.wrapper {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+/**
+ * =========
+ * - Pages -
+ * ========= 
+ */
+/**==============
+ * - Page: Home -
+ * ==============
+ */
+.page-collection-home .thumbnail {
+  display: block;
+  padding: 0px;
+  margin-bottom: 0px;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  transition: none;
+}
+.page-collection-home #main_menu {
+  background-color: #f4f4f4;
+  margin-bottom: 30px;
+}
+.page-collection-home #main_menu ul {
+  margin-left: -5px;
+  padding-left: 0;
+  list-style: none;
+  width: 1240px;
+  margin: 0 auto;
+}
+.page-collection-home #main_menu ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  *zoom: 1;
+  *float: left;
+}
+.page-collection-home #main_menu ul li {
+  padding: 0;
+  float: left;
+}
+.page-collection-home #main_menu ul li a {
+  display: block;
+  padding: 15px 30px;
+  color: #333333;
+  font-family: 'Roboto';
+  font-size: 16px;
+  border-right: 1px solid #dbdbdb;
+  margin: 0;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+.page-collection-home #main_menu ul li a i.icon-menu {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  width: 24px;
+  height: 24px;
+  margin: -3px 10px 0 0;
+  float: left;
+}
+.page-collection-home #main_menu ul li a i.icon-menu img {
+  max-width: 100%;
+}
+.page-collection-home #main_menu ul li a:hover {
+  text-decoration: none;
+  background: #eaeaea;
+}
+.page-collection-home #main_menu ul li a:focus {
+  outline: none;
+}
+.page-collection-home #main_menu ul li .active {
+  background: white;
+  position: relative;
+}
+.page-collection-home #main_menu ul li .active:after {
+  content: "";
+  height: 10px;
+  background: #ffffff;
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.page-collection-home #main_menu ul li .active:hover {
+  background: white;
+}
+.page-collection-home #main_menu ul li:last-child a {
+  border-right: 0;
+}
+.page-collection-home #main_menu ul:before {
+  content: " ";
+  display: table;
+}
+.page-collection-home #main_menu ul:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.page-collection-home .item {
+  margin-bottom: 0px;
+}
+.page-collection-home #header_navigation {
+  z-index: 1;
+}
+.page-collection-home #main_banner {
+  overflow: hidden;
+  position: relative;
+  top: -56px;
+  z-index: 0;
+}
+.page-collection-home #main_banner a {
+  display: block;
+  text-align: center;
+}
+.page-collection-home #main_banner a img {
+  margin: 0 auto;
+  max-width: 100%;
+  min-width: 980px;
+}
+.page-collection-home #main_banner .left {
+  float: none !important;
+}
+.page-collection-home #main_banner .right {
+  float: none !important;
+}
+.page-collection-home #main_menu {
+  margin-top: -56px;
+}
+.page-collection-home .hot_product {
+  margin-bottom: 30px;
+}
+.page-collection-home .hot_product .wrapper {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.page-collection-home .hot_product .item {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.page-collection-home .combo-tab-item {
+  display: none;
+}
+.page-collection-home .combo-tab-item.active {
+  display: block;
+}
+.page-collection-home.no-banner #main_menu {
+  margin-top: 0;
+}
+.page-collection-home .wrapper > .item .card-inner {
+  margin-bottom: 30px;
+}
+.page-collection-home .wrapper > .item .card-inner .thumbnail {
+  border: 1px solid #f4f4f4;
+  display: block;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+.page-collection-home .wrapper > .item .card-inner .thumbnail .overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: -100px;
+  left: 0;
+  color: white;
+  padding: 15px 30px;
+  line-height: 22px;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+  width: 100%;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-collection-home .wrapper > .item .card-inner .thumbnail .overlay p.hashtag {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.page-collection-home .wrapper > .item .card-inner .thumbnail .overlay p.hashtag a {
+  color: #ffffff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.page-collection-home .wrapper > .item .card-inner .thumbnail .overlay a {
+  color: #ffffff;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.page-collection-home .wrapper > .item .card-inner .thumbnail img {
+  width: 100%;
+}
+.page-collection-home .wrapper > .item .card-inner .description {
+  border-bottom: 2px solid #c6c6c6;
+  text-align: center;
+  padding: 15px 0px;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-collection-home .wrapper > .item .card-inner .description h3 {
+  font-family: 'Roboto';
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 5px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.page-collection-home .wrapper > .item .card-inner .description h3 a {
+  color: #333333;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-collection-home .wrapper > .item .card-inner .description a.cat-link {
+  color: #999999;
+  font-family: 'Roboto';
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-collection-home .wrapper > .item .card-inner:hover .thumbnail {
+  border: 1px solid #c1c1c1;
+}
+.page-collection-home .wrapper > .item .card-inner:hover .thumbnail .overlay {
+  bottom: 0;
+}
+.page-collection-home .wrapper > .item .card-inner:hover .description {
+  border-bottom: 2px solid #939393;
+}
+.page-collection-home .wrapper > .item .card-inner:hover .description h3 a {
+  text-decoration: none;
+  color: black;
+}
+.page-collection-home .wrapper > .item .card-inner:hover .description a.cat-link {
+  color: #666666;
+  text-decoration: none;
+}
+.page-collection-home .latest_product .wrapper > .item {
+  position: relative;
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 40px;
+  max-height: 340px;
+}
+.page-collection-home .latest_product .wrapper > .item .description {
+  border-bottom: 0;
+}
+.page-collection-home .latest_product .wrapper > .item .description h3 {
+  max-height: 40px;
+}
+.page-collection-home .btn.view-more {
+  display: table;
+  margin: 0 auto 30px;
+  padding: 8px 100px 5px;
+  border: 1px solid #999999;
+  border-radius: 0;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 13px;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-collection-home .btn.view-more:hover:hover {
+  border: 1px solid #000000;
+  color: #ffffff;
+  background: #000000;
+}
+.page-collection-home .btn.view-more.loading {
+  text-indent: -9999px;
+  width: 344px;
+  height: 36px;
+  background: #000000 url(../images/loader.gif) no-repeat center center;
+}
+@media (min-width: 1200px) {
+  .page-collection-home .hot_product .item {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .page-collection-home .hot_product .item {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .page-collection-home .hot_product .item {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .page-collection-home .latest_product .wrapper > .item {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .page-collection-home .latest_product .wrapper > .item {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .page-collection-home .latest_product .wrapper > .item {
+    float: left;
+    width: 25%;
+  }
+}
+/**
+ * =================
+ * - Page: Details -
+ * =================
+ */
+.page-collection-details .thumbnail {
+  display: block;
+  padding: 0px;
+  margin-bottom: 0px;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  transition: none;
+}
+.page-collection-details #page-collection {
+  margin-top: 16px;
+}
+.page-collection-details .buy-btn:link,
+.page-collection-details .buy-btn:visited {
+  text-decoration: none;
+  color: white;
+}
+.page-collection-details .wrapper {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.page-collection-details .buy-btn {
+  display: block;
+  line-height: 46px;
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  border-radius: 4px;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-collection-details .buy-btn .cart-wrap {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.2);
+  height: 48px !important;
+  line-height: 46px;
+  width: 48px;
+  position: relative;
+  float: left;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-collection-details .buy-btn .cart-wrap .icon-cart-white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -11px;
+}
+.page-collection-details .buy-btn.btn-red {
+  background: #d60c0c;
+}
+.page-collection-details .buy-btn:hover {
+  opacity: .8;
+}
+.page-collection-details .buy-btn:focus {
+  outline: none;
+}
+.page-collection-details #main_content {
+  position: relative;
+  float: left;
+  width: 75%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 1200px) {
+  .page-collection-details #main_content {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .page-collection-details #main_content {
+    float: left;
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .page-collection-details #main_content {
+    float: left;
+    width: 75%;
+  }
+}
+.page-collection-details #main_content .product-image {
+  float: left;
+  width: 540px;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  *width: 550px !important;
+   
+}
+ 
+.page-collection-details #main_content .product-image a img {
+  width: 100%;
+}
+.page-collection-details #main_content .product-image #product_image_combo {
+  position: relative;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-frame {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #eaeaea;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-frame .item {
+  *display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  transform-origin: 0 0;
+  *background: url('../images/combo/modules/blank.gif');
+}
+@media \0screen {
+  .page-collection-details #main_content .product-image #product_image_combo .combo-frame .item {
+    display: none;
+  }
+}
+@media \0screen {
+  .page-collection-details #main_content .product-image #product_image_combo .combo-frame .item {
+    background: url('../images/combo/modules/blank.gif');
+  }
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-frame .item > span.inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-frame .hovered {
+  border: 1px solid #666666;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-frame .hovered > span.inner {
+  border: 1px solid #ffffff;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-frame #combo_background {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info {
+  *display: none;
+}
+@media \0screen {
+  .page-collection-details #main_content .product-image #product_image_combo .combo-info {
+    display: none;
+  }
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item {
+  display: none;
+  position: absolute;
+  width: 510px;
+  background-color: #ffffff;
+  right: -400px;
+  top: 0px;
+  z-index: 10;
+  border: 0px solid #f4f4f4;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-thumbnail {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+  float: left;
+  padding: 10px;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-thumbnail img {
+  height: 100%;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info {
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .title {
+  line-height: 20px;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .outstock {
+  margin-left: 190px;
+  margin-top: 10px;
+  margin-right: 206px;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .outstock .alert {
+  padding: 5px;
+  font-size: 11px;
+  text-align: center;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .title:hover {
+  color: #8c8c8c;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .prices {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .prices .current {
+  color: #c63728;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 18px;
+  display: block;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .prices .old {
+  margin-top: 10px;
+  color: #a2a2a2;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 11px;
+  display: block;
+  line-height: 20px;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .prices .old b {
+  font-weight: normal;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .yoursaved {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 11px;
+  font-weight: normal;
+  color: #a2a2a2;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .yoursaved b {
+  font-weight: normal;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .viewdetails {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 13px;
+  text-decoration: none;
+  color: #00a8dc;
+  display: block;
+  margin-top: 10px;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .item .item-info .viewdetails:hover {
+  color: #00ceff;
+}
+.page-collection-details #main_content .product-image #product_image_combo .combo-info .active {
+  display: block;
+}
+.page-collection-details #main_content .product-image a img {
+  width: 100%;
+}
+ 
+.page-collection-details #main_content .product-image .product-combo {
+  position: relative;
+  width: 487px;
+  height: 487px;
+  overflow: hidden;
+}
+.page-collection-details #main_content .product-image .product-combo #prd-demo a {
+  position: absolute;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  display: block;
+}
+.page-collection-details #main_content .product-image .product-combo #prd-demo a img {
+  width: 100%;
+}
+.page-collection-details #main_content .product-image .product-combo #prd-demo a:hover {
+  opacity: .6;
+}
+.page-collection-details #main_content .product-image .product-combo #prd-demo a.sp01 {
+  width: 500px;
+  top: 0;
+  left: -130px;
+}
+.page-collection-details #main_content .product-image .product-combo #prd-demo a.sp01:hover #box-info-01 {
+  display: block !important;
+}
+.page-collection-details #main_content .product-image .product-combo #prd-demo a.sp01:hover .float-box-info {
+  display: block;
+}
+.page-collection-details #main_content .product-image .product-combo #prd-demo a.sp02 {
+  width: 230px;
+  top: 30px;
+  right: 0;
+}
+.page-collection-details #main_content .product-image .product-combo #prd-demo a.sp03 {
+  width: 230px;
+  top: 190px;
+  right: 0;
+}
+.page-collection-details #main_content .product-image .product-combo:hover + #box-info-01 {
+  display: block;
+}
+.page-collection-details #main_content .product-image .float-info-box {
+  position: absolute;
+  top: 0;
+  right: -355px;
+  width: 345px;
+  border: 2px solid #c6c6c6;
+  background: white;
+  z-index: 99;
+  padding: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: none;
+}
+.page-collection-details #main_content .product-image .float-info-box .float-box-image {
+  margin-bottom: 10px;
+}
+.page-collection-details #main_content .product-image .float-info-box .float-box-image a {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+}
+.page-collection-details #main_content .product-image .float-info-box .float-box-image a img {
+  width: 100%;
+}
+.page-collection-details #main_content .product-image .float-info-box .float-box-description .product-title {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.page-collection-details #main_content .product-image .float-info-box .float-box-description .product-title a {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+}
+.page-collection-details #main_content .product-image .float-info-box .float-box-description .product-title a:hover {
+  text-decoration: none;
+  color: #666666;
+}
+.page-collection-details #main_content .product-image .float-info-box .float-box-description .pricing {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 14px;
+  color: #d60c0c;
+}
+.page-collection-details #main_content .product-image .float-info-box:after {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  content: "";
+  width: 30px;
+  height: 100%;
+  opacity: 0;
+}
+.page-collection-details #main_content .product-info-detail {
+  position: relative;
+  float: left;
+  width: 400px;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+}
+ 
+.page-collection-details #main_content .product-info-detail h1 {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0 0 20px;
+  line-height: 32px;
+  font-weight: 300;
+}
+.page-collection-details #main_content .product-info-detail .social-btn-group {
+  margin-bottom: 20px;
+}
+.page-collection-details #main_content .product-info-detail .social-btn-group a.btn {
+  background: #3b599d;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 3px 10px 3px 5px;
+  font-size: 11px;
+  margin-right: 4px;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-collection-details #main_content .product-info-detail .social-btn-group a.btn i {
+  float: left;
+  margin-right: 5px;
+}
+.page-collection-details #main_content .product-info-detail .social-btn-group a.btn:hover {
+  opacity: .8;
+}
+.page-collection-details #main_content .product-info-detail .social-btn-group a.btn.btn-blue {
+  background: #0388cd;
+}
+.page-collection-details #main_content .product-info-detail .social-btn-group a.btn.btn-comment-fb {
+  background: #4c69ba;
+  background: -webkit-linear-gradient(#4c69ba, #3b55a0);
+  background: linear-gradient(#4c69ba, #3b55a0);
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  padding: 0;
+  text-shadow: 0 -1px 0 #354c8c;
+  white-space: nowrap;
+  font-family: Arial;
+  text-transform: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: -3px;
+}
+.page-collection-details #main_content .product-info-detail .social-btn-group a.btn.btn-comment-fb i.icon-fb-comment {
+  margin-top: 5px;
+}
+.page-collection-details #main_content .product-info-detail .product-description {
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+.page-collection-details #main_content .product-info-detail .product-description p {
+  font-size: 13px;
+  text-align: justify;
+}
+.page-collection-details #main_content .product-info-detail .buy-btn {
+  display: block;
+  width: 240px !important;
+  height: 48px !important;
+}
+.page-collection-details #main_content .product-info-detail .buy-btn.disabled {
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+  color: #ffffff !important;
+}
+.page-collection-details #main_content .product-info-detail .product-contain {
+  border-top: 1px solid #f0f1f2;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.page-collection-details #main_content .product-info-detail .product-contain p {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 13px;
+  font-weight: 700;
+}
+.page-collection-details #main_content .product-info-detail .product-contain ul {
+  margin-left: -5px;
+  padding-left: 0;
+  list-style: none;
+}
+.page-collection-details #main_content .product-info-detail .product-contain ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  *zoom: 1;
+  *float: left;
+}
+.page-collection-details #main_content .product-info-detail .product-contain ul li a {
+  display: inline-block;
+}
+.page-collection-details #main_content #product_contain_collection {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+ 
+.page-collection-details #main_content #product_contain_collection:before {
+  content: " ";
+  display: table;
+}
+.page-collection-details #main_content #product_contain_collection:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.page-collection-details #main_content #product_contain_collection h1 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-top: 1px solid #f0f1f2;
+  padding-top: 20px;
+}
+.page-collection-details #main_content #product_contain_collection h1 span {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product {
+  padding: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  list-style: none;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li {
+  position: relative;
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  height: 380px;
+}
+@media (min-width: 1200px) {
+  .page-collection-details #main_content #product_contain_collection ul.list-product li {
+    float: left;
+    width: 25% !important;
+  }
+}
+@media (min-width: 992px) {
+  .page-collection-details #main_content #product_contain_collection ul.list-product li {
+    float: left;
+    width: 33.3333%;
+  }
+}
+@media (min-width: 768px) {
+  .page-collection-details #main_content #product_contain_collection ul.list-product li {
+    float: left;
+    width: 33.3333%;
+  }
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li a.thumbnail {
+  display: block;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid white;
+  position: relative;
+  text-align: center;
+  height: 240px;
+  line-height: 240px;
+  overflow: hidden;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li a.thumbnail img {
+  display: inline-block;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li a.thumbnail .out-stock-label {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: rgba(65, 65, 65, 0.8);
+  text-align: center;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 4px 0px;
+  *background: #000000 !important;
+  *filter: alpha(opacity=62);
+}
+@media \0screen {
+  .page-collection-details #main_content #product_contain_collection ul.list-product li a.thumbnail .out-stock-label {
+    background: #000 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  }
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li .description {
+  padding: 15px 0 10px;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li .description h3.title {
+  font-family: 'Roboto';
+  color: #666666;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 5px;
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li .description h3.title a {
+  color: #333333;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li .description .title-info {
+  min-height: 66px;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li .description .pricing {
+  font-family: 'Roboto';
+  color: #666666;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li .description .pricing .price-new {
+  color: #c63728;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-weight: 400;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li .description .pricing .price-old {
+  position: relative;
+  color: #666666 !important;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li .description .pricing .price-old:before {
+  border-bottom: 1px solid #666666;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li .description .pricing .sale-off {
+  color: #ffffff;
+  font-family: "Roboto-Medium";
+  background: #d60c0c;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  margin-left: 8px;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li:hover a.thumbnail {
+  border: 1px solid #cccccc;
+}
+.page-collection-details #main_content #product_contain_collection ul.list-product li:hover .description h3 a {
+  opacity: .7;
+  text-decoration: none;
+}
+.page-collection-details #main_content #product_comment {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#product_contain_collection .adr-coupon {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+@media (min-width: 1200px) {
+  .page-collection-details #main_content #product_comment {
+    float: left;
+    width: 100%;
+  }
+}
+.page-collection-details #main_content #product_comment h1 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-top: 1px solid #f0f1f2;
+  border-bottom: 1px solid #f0f1f2;
+  padding: 15px 0;
+}
+.page-collection-details #sidebar {
+  position: relative;
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 1200px) {
+  .page-collection-details #sidebar {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .page-collection-details #sidebar {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .page-collection-details #sidebar {
+    float: left;
+    width: 25%;
+  }
+}
+.page-collection-details #sidebar #related_collection {
+  background: #f4f4f4;
+  padding: 20px;
+}
+.page-collection-details #sidebar #related_collection h3 {
+  margin: 0 0 20px 0;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 18px;
+}
+.page-collection-details #sidebar #related_collection ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.page-collection-details #sidebar #related_collection ul li {
+  margin-bottom: 30px;
+}
+.page-collection-details #sidebar #related_collection ul li a.thumbnail {
+  display: block;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #f4f4f4;
+  background: #ffffff;
+}
+.page-collection-details #sidebar #related_collection ul li a.thumbnail img {
+  width: 100%;
+}
+.page-collection-details #sidebar #related_collection ul li a.title {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  color: black;
+  margin-top: 10px;
+  text-transform: uppercase;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  font-weight: 300;
+}
+.page-collection-details #sidebar #related_collection ul li:last-child {
+  margin-bottom: 0;
+}
+.page-collection-details #sidebar #related_collection ul li:hover a.thumbnail {
+  border: 1px solid #dbdbdb;
+}
+.page-collection-details #sidebar #related_collection ul li:hover a.title {
+  text-decoration: none;
+  opacity: .7;
+}
+.page-collection-details #pick_product .modal-lg {
+  width: 1016px;
+}
+.page-collection-details #pick_product .modal-content {
+  border-radius: 0;
+  border: none;
+}
+.page-collection-details #pick_product .modal-content .modal-body {
+  padding: 0;
+  position: relative;
+  min-height: 400px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .close {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  font-weight: normal;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+  background: url('../images/landing_page/collection/icon.png') -59px -53px;
+  opacity: .3;
+}
+.page-collection-details #pick_product .modal-content .modal-body .close:hover {
+  opacity: .5;
+}
+.page-collection-details #pick_product .modal-content .modal-body .close:focus {
+  outline: none;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products {
+  padding: 14px;
+  width: 736px;
+  *width: 688px;
+  float: left;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products h3 {
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.page-collection-details #pick_product .modal-content .modal-body:before {
+  content: " ";
+  display: table;
+}
+.page-collection-details #pick_product .modal-content .modal-body:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/*.page-collection-details #pick_product .modal-content .modal-body .products .list-product {
+  padding: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  list-style: none;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product {
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 430px;
+}
+@media (min-width: 1200px) {
+  .page-collection-details #pick_product .modal-content .modal-body .products .list-product {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .page-collection-details #pick_product .modal-content .modal-body .products .list-product {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .page-collection-details #pick_product .modal-content .modal-body .products .list-product {
+    float: left;
+    width: 25%;
+  }
+}*/
+.page-collection-details #pick_product .modal-content {
+  padding: 0;
+  position: relative;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product .thumbnail {
+  display: block;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border: 1px solid #f0f1f2;
+  position: relative;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product .thumbnail:hover {
+  opacity: 0.8;
+  border: 1px solid #c7cbce;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product .thumbnail:focus {
+  outline: none;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product .description h3.title {
+  font-family: "Roboto-Bold", sans-serif !important;
+  color: #666666;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 5px;
+  min-height: 20px;
+  line-height: 20px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product .description h3.title a {
+  color: #333333;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product .description h3.title a:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product .description .pricing {
+  font-family: 'Roboto';
+  color: #666666;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product .pricing .price-new {
+  color: #c63728;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 34px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product form select.form-control {
+  border-radius: 0;
+  margin-bottom: 8px;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 13px;
+  box-shadow: none;
+  padding-left: 5px;
+  width: 60px;
+  *width: 43px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product .collection-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: -24px;
+  bottom: 0;
+  height: 22px;
+  margin: auto;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product:hover .checkbox label:before {
+  border: 1px solid #0493d3;
+}
+.page-collection-details #pick_product .modal-content .modal-body .products .list-product.out-stock .thumbnail {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info {
+  width: 280px;
+  *width: 232px;
+  float: right;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 14px;
+  background: #f0f1f2;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .buy-btn {
+  margin-bottom: 20px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .buy-btn.disabled {
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+  color: #ffffff !important;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .total-purchase {
+  font-weight: 500;
+  font-size: 12px;
+  height: 20px;
+  height: auto;
+  line-height: 20px;
+  border-bottom: 1px solid #c6c6c6;
+  padding-bottom: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .total-purchase .total-purchase-price {
+  font-size: 16px;
+  color: #c63728;
+  float: right;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .total-purchase .total-purchase-title {
+  font-family: "Roboto-bold";
+  color: #333333;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .total-purchase #totalPrice {
+  color: #d60c0c !important;
+  font-size: 16px;
+  font-family: 'Roboto-Medium', sans-serif;
+  float: right;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .total-purchase #totalLabel {
+  font-family: 'Roboto-Medium', sans-serif;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .order-list {
+  max-height: 350px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .order-item {
+  font-size: 12px;
+  border-bottom: 1px dashed #c6c6c6;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .order-item .item-title:before {
+  content: " ";
+  display: table;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .order-item .item-title:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .order-item .item-title p {
+  float: left;
+  width: 65%;
+  margin-bottom: 5px;
+  color: #333333;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .order-item .item-title .price {
+  float: right;
+  color: #333333;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .order-item .item-info {
+  color: #666666;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .order-item .item-info .item {
+  margin-right: 5px;
+}
+.page-collection-details #pick_product .modal-content .modal-body .order-info .order-item .item-info .item span {
+  color: #333333;
+}
+.page-collection-details #pick_product .products span.out-stock-label {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: #414141;
+  text-align: center;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  height: 26px;
+  line-height: 26px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.page-collection-details #pick_product .list-product-header {
+  overflow: hidden;
+  background: #f7f7f7;
+  color: #666666;
+  font-family: "Roboto-bold";
+  font-size: 12px;
+}
+.page-collection-details #pick_product .list-product-header > div {
+  line-height: 28px;
+}
+.page-collection-details #pick_product .list-product-body .items {
+  overflow: hidden;
+  border-top: 1px solid #eeeeee;
+  padding: 12px 0;
+}
+.page-collection-details #pick_product .list-product-body > ul {
+  margin-bottom: 0;
+}
+.page-collection-details #pick_product .list-product-body .items:first-child {
+  border-top: none;
+}
+.page-collection-details #pick_product .list-product-thumbnail {
+  float: left;
+  min-height: 28px;
+  width: 96px;
+  margin-left: 32px;
+}
+.page-collection-details #pick_product .list-product-title {
+  float: left;
+  min-height: 28px;
+  width: 320px;
+  width: 336px;
+  *width: 304px;
+  padding-left: 16px;
+  padding-left: 8px;
+}
+.page-collection-details #pick_product .list-product-quantity {
+  float: left;
+  min-height: 28px;
+  width: 116px;
+  width: 88px;
+  *width: 100px;
+  padding-left: 16px;
+  padding-left: 8px;
+  position: relative;
+}
+.page-collection-details #pick_product .list-product-quantity .adr.message {
+  padding: 15px;
+  padding: 4px 4px 4px 32px;
+  margin-bottom: 20px;
+  margin-bottom: 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+  position: absolute;
+  color: #333333 !important;
+  top: 43px;
+  right: auto;
+  left: 8px;
+  white-space: initial;
+  width: 214px;
+}
+.page-collection-details #pick_product .list-product-quantity .adr.message > .icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin: 0;
+  display: inline-block !important;
+  width: 24px !important;
+  height: 24px !important;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.page-collection-details #pick_product .list-product-quantity .adr.message * {
+  white-space: initial;
+}
+.page-collection-details #pick_product .list-product-quantity .adr.message > .text {
+  display: inline-block;
+  line-height: 24px;
+}
+.page-collection-details #pick_product .list-product-quantity .adr.warning.message {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+}
+.page-collection-details #pick_product .list-product-quantity .adr.warning.message > .icon {
+  background-image: url('../images/icons/spritesheet.png');
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: -267px -223px;
+  background-position: -263px -219px;
+}
+.page-collection-details #pick_product .list-product-quantity .adr.message.m-tooltip:after {
+  content: "";
+  height: 8px;
+  width: 13px;
+  position: absolute;
+  top: -8px;
+  right: auto;
+  left: 24px;
+}
+.page-collection-details #pick_product .list-product-quantity .adr.warning.message.m-tooltip:after {
+  background-image: url('../images/icons/spritesheet.png');
+  background-repeat: no-repeat;
+  display: block;
+  width: 13px;
+  height: 8px;
+  background-position: -436px -360px;
+}
+.page-collection-details #pick_product .list-product-price {
+  float: left;
+  min-height: 28px;
+  width: 156px;
+  width: 136px;
+  *width: 140px;
+  padding-left: 16px;
+  padding-left: 8px;
+}
+.page-collection-details #pick_product .list-product-price .pricing .text.original.price {
+  font-size: 11px;
+}
+.page-collection-details #pick_product .list-product-price .pricing .text.original.price span {
+  display: block;
+}
+.page-collection-details #pick_product .mCustomScrollbar {
+  max-height: 500px;
+  max-height: 550px;
+  padding-right: 0 !important;
+}
+.page-collection-details #pick_product .mCustomScrollbar .mCustomScrollBox {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: none;
+  direction: ltr;
+}
+.page-collection-details #pick_product .mCSB_scrollTools {
+  right: 8px !important;
+  right: 0 !important;
+  top: 56px;
+  top: 0;
+  bottom: 16px;
+  bottom: 0;
+  position: absolute;
+  width: 16px !important;
+  height: auto;
+  left: auto;
+  opacity: 0.75 !important;
+}
+.page-collection-details #pick_product .mCSB_scrollTools .mCSB_draggerRail {
+  background: #e9e9e9 !important;
+  background-color: transparent !important;
+}
+.page-collection-details #pick_product .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #d8d8d8 !important;
+  background-color: rgba(0, 0, 0, 0.35) !important;
+  width: 4px !important;
+  border-radius: 16px !important;
+}
+.page-collection-details #pick_product .list-product-properties {
+  margin: 16px 0;
+}
+.page-collection-details #pick_product .list-product-properties .item-property-values {
+  overflow: hidden;
+  float: left;
+}
+.page-collection-details #pick_product .list-product-properties .item-property {
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.page-collection-details #pick_product .list-product-properties .item-property:last-child {
+  margin-bottom: 0;
+}
+.page-collection-details #pick_product .list-product-properties .item-property-label {
+  float: left;
+  line-height: 32px;
+  width: 64px;
+}
+.page-collection-details #pick_product .list-product-properties .adr.property-select {
+  margin-bottom: 3px;
+  min-height: 34px;
+}
+.page-collection-details #pick_product .list-product-properties .adr.property-select > label {
+  min-width: 32px;
+  padding: 3px 4px;
+}
+.page-collection-details #pick_product .adr.property-select.active label {
+  border-width: 2px;
+}
+.page-collection-details #pick_product .mCSB_inside > .mCSB_container {
+  margin-right: 15px !important;
+}
+.page-collection-details .collection-checkbox {
+  margin: 0;
+}
+.page-collection-details .collection-checkbox input[type=checkbox] {
+  display: none;
+}
+.page-collection-details .collection-checkbox input[type=checkbox]:checked + label:before {
+  width: 16px;
+  height: 16px;
+  background: url('../images/landing_page/collection/checked.gif') -1px -1px;
+  border: 1px solid #0493d3;
+}
+.page-collection-details .collection-checkbox label {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+.page-collection-details .collection-checkbox label:before {
+  border-radius: 0px;
+  border: 1px solid #f0f1f2;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  float: left;
+  background: white;
+}
+.page-collection-details .collection-checkbox label:after {
+  display: none;
+}
+.page-collection-details .social-btn-group {
+  overflow: hidden;
+}
+.page-collection-details .fb-like.fb_iframe_widget {
+  float: left !important;
+  margin-right: 16px;
+  position: relative;
+}
+.page-collection-details .fb-like.fb_iframe_widget:after {
+  content: '';
+  height: 12px;
+  width: 1px;
+  background: #cccccc;
+  position: absolute;
+  right: -8px;
+  top: 4px;
+}
+.page-collection-details #header_breadcrumb_container #header_breadcrumb {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 12px;
+}
+.page-collection-details .adr.breadcrumb > .item {
+  display: initial;
+}
+.page-collection-details .wrap-list-filter-option .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background: #d8d8d8 !important;
+}
+.page-collection-details #pick_product .list-product-properties .item-property-label {
+  width: 108px;
+  font-size: 12px;
+}
+.page-collection-details #pick_product .list-product-properties .adr.property-select {
+  margin-bottom: 8px;
+}
+.page-collection-details #pick_product .list-product-properties .item-property-values {
+  width: 212px;
+}
+.page-collection-details .mCSB_scrollTools .mCSB_draggerContainer {
+  position: absolute;
+  top: 0;
+  left: auto !important;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+.page-collection-details .sidebar_right_1024 #sidebar {
+    display: none;
+}
+@media (max-width: 1270px) {
+    .page-collection-details .sidebar_right_1024 {
+        float: left;
+        margin-top: 20px;
+    }
+    .page-collection-details #recipes_description {
+        float: left;
+        width: 712px;
+        margin-right: 16px;
+        border-radius: 4px;
+    }
+    .page-collection-details .sidebar_right_1024 #sidebar {
+        display: block;
+        width: 255px;
+    }
+    .page-collection-details #sidebar {
+        display: none;
+    }
+    .page-collection-details #main_content {
+        float: none !important;
+        width: 100% !important;
+    }
+    .page-collection-details #main_content .product-info-detail {
+        width: 460px;
+    }
+    .page-collection-details #main_content #product_contain_collection {
+       width: 748px;
+    }
+}

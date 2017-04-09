@@ -1,0 +1,8 @@
+{
+  "name": "Adayroi.com",
+  "short_name": "Adayroi.com",
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "712777526666",
+  "gcm_user_visible_only": true
+}
